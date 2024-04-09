@@ -2,12 +2,12 @@ const path = require("path");
 
 module.exports = {
     mode: "production",
-    entry: "./src",
+    entry: "./src/Addons.js",
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "ThreeAddons.min.js",
         library: "ThreeAddons",
-        libraryTarget: "umd"
+        libraryTarget: "window"
     },
     module: {
         rules: [
